@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NeoTokyo Social Platform
 
 A simple Java-based social media web application built with JSP/Servlets, MySQL, and Tomcat.  
@@ -85,3 +86,7 @@ up the database.
 
 - **HoloFeed** → A profile page showing all posts from a single user.  
   *Influence:* Inspired by holograms and sci-fi HUDs — a user’s profile becomes their projected holographic feed.  
+=======
+# Cyberspace
+
+>>>>>>> 84c51de595e6a3b1d40c0a33e7d701dc7bb1c9bb
