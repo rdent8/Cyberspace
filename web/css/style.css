@@ -1,0 +1,165 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  background-color: #050811; 
+  background-image: linear-gradient(#050811, #1a1a24);
+  color: #fefefae9;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+header {
+  background-color: #0d0f1a;
+  border-bottom: 5px solid #222244;
+  text-align: center;
+  padding: 30px;
+  font-size: 2em;
+  color: rgb(168, 155, 224);
+}
+
+
+h1::before,
+h1::after {
+  content: " `ðŸŒ€` ";
+     color: #660000; 
+  text-shadow: 0 0 6px rgba(102, 0, 0, 0.8);
+  font-size: 0.9em;
+}
+
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(13, 15, 26, 0.95);
+  border-bottom: 1px solid #444466;
+  padding: 10px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar a {
+  color: #a5a5ba;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.nav-bar a:hover { color: #c83006; }
+
+/* FORMS */
+form textarea,
+form input[type="text"],
+form input[type="password"],
+form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #555577;
+  background-color: #1a1a24;
+  color: white;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #5a5a7a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+form button:hover { background-color: #c83006; }
+
+
+div[id^="pulse"] {
+  margin: 8px 0;
+  padding: 6px 0 10px;
+  border-bottom: 2px solid #3a2a5a; 
+}
+
+div[id^="pulse"] p { margin: 6px 0; }
+div[id^="pulse"] small { color: rgba(255,255,255,0.7); }
+
+
+form[action$="/like"] button {
+  background-color: #1a1a24;
+  color: #ffd700;
+  border: 1px solid #8a8a8a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color .2s ease, box-shadow .2s ease, transform .05s ease;
+}
+form[action$="/like"] button:hover {
+  box-shadow: 0 0 8px rgba(255,215,0,0.6);
+  color: #ffe066;
+}
+form[action$="/like"] button:active {
+  transform: translateY(1px);
+}
+
+
+a { color: #8ab4f8; text-decoration: none; }
+a:hover { color: #f2b2f5; }
+
+
+.tweet-card {
+  background-color: #11131b;
+  padding: 15px;
+  margin: 14px 0;
+  border: 2px solid #333355;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(120, 90, 180, 0.15);
+}
+.tweet-card p { margin: 8px 0; }
+.tweet-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+footer {
+  background-color: #0d0f1a;
+  border-top: 4px outset rgb(241, 246, 241);
+  color: rgb(250, 241, 231);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+footer::before,
+footer::after {
+  content: " `ðŸŒ€` ";
+  color: #660000;
+  text-shadow: 0 0 6px rgba(102, 0, 0, 0.8);
+  font-size: 0.9em;
+}
+
+
+
+.tweet-card img:hover {
+  box-shadow: 0 0 10px rgba(138, 180, 248, 0.6); /* soft bluish glow */
+  transform: scale(1.02); 
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .nav-bar { flex-direction: column; align-items: flex-start; }
+  .tweet-card { padding: 10px; }
+}

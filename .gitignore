@@ -1,0 +1,11 @@
+nbproject/private/
+build/
+dist/
+web/datauploads/*
+!web/datauploads/.gitkeep
+*.class
+*.log
+*.jar
+*.war
+.DS_Store
+Thumbs.db

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee">
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PulseUploadServlet</servlet-name>
+        <servlet-class>controller.PulseUploadServlet</servlet-class>
+    </servlet>
+    <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PulseUploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>VoltageServlet</servlet-name>
+        <servlet-class>controller.VoltageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VoltageServlet</servlet-name>
+        <url-pattern>/like</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ShadowLinkServlet</servlet-name>
+        <servlet-class>controller.ShadowLinkServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShadowLinkServlet</servlet-name>
+        <url-pattern>/follow</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>/view/neon_gate.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
