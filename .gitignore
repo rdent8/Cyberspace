@@ -1,4 +1,4 @@
-nbproject/private/
+﻿nbproject/private/
 build/
 dist/
 web/datauploads/*
@@ -7,5 +7,6 @@ web/datauploads/*
 *.log
 *.jar
 *.war
+*.ear
 .DS_Store
 Thumbs.db
