@@ -90,3 +90,10 @@ up the database.
 # Cyberspace
 
 >>>>>>> 84c51de595e6a3b1d40c0a33e7d701dc7bb1c9bb
+
+
+## How to Test
+1) Seed DB: `mysql < docs/TEST_DATA.sql`
+2) Manual checks: `docs/REGRESSION_CHECKLIST.md`
+3) Unit tests: see `tests/unit/DBConnectionTest.java`
+4) E2E (optional): `python tests/e2e/login_flow_example.py`

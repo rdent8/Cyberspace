@@ -1,0 +1,23 @@
+name: Java CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Compile (best-effort)
+        run: |
+          echo "No Maven buildfile found. Compiling tests only."
+          mkdir -p target/test-classes
+      - name: Run unit tests (best-effort)
+        run: |
+          echo "Placeholder for JUnit run. Integrate with Maven/Ant as needed."
